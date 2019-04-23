@@ -1,6 +1,6 @@
 # Web Scraping and Document Databases
 
-This web application scrapes various websites for data related to the Mission to Mars and displays the information in a single HTML page.
+This web application scrapes various websites for data related to the Mission to Mars and displays the information on a single HTML page.
 
 ## Scraping
 
