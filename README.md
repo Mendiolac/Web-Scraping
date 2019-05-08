@@ -4,7 +4,7 @@ This web application scrapes various websites for data related to the Mission to
 
 ## Scraping
 
-Starting in Jupyter notebook this web application uses Splinter, to navigate the websites when needed, and BeautifulSoup, to help find and parse out the necessary data. 
+Starting in Jupyter notebook this web application uses Splinter, to navigate the websites when needed, and BeautifulSoup, to secure and parse out the necessary data. 
 
 The executable path is set and initializes the chrome browser in splinter. The chromedriver path can be found by `!which chromedriver`; the executable path needs to be added to the local hosts' `PATH` under environmet variables, which can be found in the System's advanced settings.
 
@@ -73,7 +73,7 @@ df.columns=['description', 'value']
 df.set_index('description', inplace=True)
 ```
 
-## MongoDB and Flask Application
+### MongoDB and Flask Application
 
 Uses MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above. Starts by converting the Jupyter notebook into a Python script called `scrape_mars.py` with a function called `scrape` that will execute all of the scraping code from above and return one Python dictionary containing all of the scraped data. 
 
